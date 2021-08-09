@@ -1,8 +1,8 @@
 // comece a criar a sua função add na linha abaixo
 
 function add(a, b) {
-    let resultado = a + b
-    return resultado
+    let resultado = a + b;
+    return resultado;
 }
 
 // descomente a linha seguinte para testar sua função
@@ -15,10 +15,10 @@ function multiply(a, b) {
     let resultado = 0;
     let sum = 0;
     for (let i = 0; i < b; i++) {
-        resultado = add(sum, a)
-        sum = resultado
+        resultado = add(sum, a);
+        sum = resultado;
     }
-    return resultado
+    return resultado;
 }
 
 // descomente a linha seguinte para testar sua função
@@ -27,9 +27,17 @@ function multiply(a, b) {
 
 // comece a criar a sua função power na linha abaixo
 
-
+function power(a, b) {
+    let resultado = 0;
+    let sum = 1;
+    for (let i = 0; i < b; i++) {
+        resultado = multiply(sum, a)
+        sum = resultado; 
+    }
+    return resultado;
+}
 // descomente a linha seguinte para testar sua função
-// console.assert(power(3, 4) === 81, 'A função power não está funcionando como esperado');
+console.assert(power(3, 4) === 81, 'A função power não está funcionando como esperado');
 
 
 // comece a criar a sua função factorial na linha abaixo
