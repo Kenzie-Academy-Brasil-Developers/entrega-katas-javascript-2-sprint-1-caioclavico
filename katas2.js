@@ -1,8 +1,12 @@
 // comece a criar a sua função add na linha abaixo
 
+function add(a, b) {
+    let resultado = a + b
+    return resultado
+}
 
 // descomente a linha seguinte para testar sua função
-// console.assert(add(3, 5) === 8, 'A função add não está funcionando como esperado');
+console.assert(add(3, 5) === 8, 'A função add não está funcionando como esperado');
 
 
 // comece a criar a sua função multiply na linha abaixo
