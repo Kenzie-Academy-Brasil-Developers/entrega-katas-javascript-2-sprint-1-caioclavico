@@ -11,9 +11,13 @@ console.assert(add(3, 5) === 8, 'A função add não está funcionando como espe
 
 // comece a criar a sua função multiply na linha abaixo
 
+function multiply(a, b) {
+    let resultado = a * b
+    return resultado
+}
 
 // descomente a linha seguinte para testar sua função
-// console.assert(multiply(4, 6) === 24, 'A função multiply não está funcionando como esperado');
+ console.assert(multiply(4, 6) === 24, 'A função multiply não está funcionando como esperado');
 
 
 // comece a criar a sua função power na linha abaixo
