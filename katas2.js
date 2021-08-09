@@ -12,7 +12,12 @@ console.assert(add(3, 5) === 8, 'A função add não está funcionando como espe
 // comece a criar a sua função multiply na linha abaixo
 
 function multiply(a, b) {
-    let resultado = a * b
+    let resultado = 0;
+    let sum = 0;
+    for (let i = 0; i < b; i++) {
+        resultado = add(sum, a)
+        sum = resultado
+    }
     return resultado
 }
 
