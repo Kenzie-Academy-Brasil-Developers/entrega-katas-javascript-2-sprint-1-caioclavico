@@ -42,9 +42,24 @@ console.assert(power(3, 4) === 81, 'A função power não está funcionando como
 
 // comece a criar a sua função factorial na linha abaixo
 
+function factorial(a) {
+    let resultado = 0;
+    let sum = 0;
+
+    for (let i = a - 1; i < a && i > 0; i--) {
+        if (resultado === 0){
+            sum = multiply(a, i);
+            resultado = sum;
+        } else {
+            sum = multiply(resultado, i);
+            resultado = sum;
+        }
+    }
+    return resultado;
+}
 
 // descomente a linha seguinte para testar sua função
-// console.assert(factorial(5) === 120, 'A função factorial não está funcionando como esperado');
+console.assert(factorial(5) === 120, 'A função factorial não está funcionando como esperado');
 
 
 /**
