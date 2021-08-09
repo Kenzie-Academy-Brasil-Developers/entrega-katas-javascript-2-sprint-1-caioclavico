@@ -76,7 +76,7 @@ function fibonacci(a) {
         resultado = a - 1;
     } else {
         for (let i = 3; i <= a + 1; i++) {
-            resultado = ultimo + penultimo;
+            resultado = add(ultimo, penultimo);
             penultimo = ultimo;
             ultimo = resultado;
         }
